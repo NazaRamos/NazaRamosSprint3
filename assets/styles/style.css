@@ -1,0 +1,674 @@
+:root{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    min-height: 80vh;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+header{
+    background-color: rgba(255, 182, 193, 0.473);
+    min-height: 10vh;
+    width: 100%;
+    outline: 1px ridge mediumslateblue;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+nav{
+    padding-left: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+}
+nav a{
+    padding: 0.5em;
+    border: solid;
+    text-decoration: none;
+    font-size: 0.6em;
+    border-radius: 1em;
+}
+a:hover{
+    background-color: rgb(138, 255, 255);
+    transform: scale(1.3);
+    transition: 1s;
+}
+.logo{
+    height: 100%;
+    width: 4em;
+}
+body{
+    background-image: linear-gradient(
+    50deg,
+     hsl(64deg 100% 94%) 0%,
+     hsl(134deg 100% 96%) 15%,
+     hsl(188deg 100% 93%) 38%,
+     hsl(284deg 100% 94%) 93%);
+}
+h1{
+    font-size: 3em;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+}
+h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+.banner{
+    width: 80vw;
+    height: 35vh;
+    box-sizing: content-box;
+    background-image: url(../images/two-icecream.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.caja1{
+    width: 80vw;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.caja1 p, .caja1 img{
+    height: 100%;
+}
+.caja1 p{
+    width: 45%;
+    align-self: center;
+}
+.Panqueque{
+    width: 45%;
+}
+.caja2{
+    width: 80vw;
+    height: 20%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.caja2 p{
+    align-self: center;
+
+}
+.Helado, .choco, .panqueque2{
+    width: 35%;
+    height: 50%;
+    padding-left: 1em;
+}
+footer{
+    background-color: rgba(255, 182, 193, 0.473);
+    min-height: 10vh;
+    width: 100%;
+    outline: 1px ridge mediumslateblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.caja3{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    object-position: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.caja3 img{
+    width: 50%;
+    padding-bottom: 1em;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.caja4{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-around;
+}
+.caja4 img{
+    width: 50%;
+}
+table, thead, tbody, th, tr, td{
+    outline: 1px solid violet;
+    border-collapse: collapse;
+}
+th{
+    padding: 1em;
+    font-size: 2em;
+}
+tr, td{
+    padding: 1em 0.5em;
+    text-align: center;
+    font-size: 1.3em;
+}
+ol{
+    padding-left: 1em;
+}
+#caja4{
+    gap: 3em;
+    width: 80vw;
+}
+#caja4 img{
+    width: 50%;
+}
+li{
+    padding-left: 1em;
+}
+#CreamIce{
+    height: 20em;
+}
+#CandyIcecream{
+    height: 30em;
+    object-fit: contain;
+}
+.cajamapform{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 80%;
+    padding: 2em 0em 0em 0em;
+}
+.caja5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    align-self: center;
+    width: 60vh;
+}
+.caja5 h2{
+    padding-bottom: 1em;
+    text-align: center;
+}
+.caja5 iframe{
+    width: 100%;
+    height: 100%;
+}
+.caja6{
+    height: 100%;
+    width: 30%;
+}
+fieldset{
+    padding: 0.6em 0em;
+    font-size: 0.8em;
+}
+#message{
+    width: 98%;
+    height: 7em;
+}
+#name, #lname{
+    width: 98%;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+}
+.payment label{
+    display: flex;
+    size: 1em;
+    padding-left: 0.5em;
+    gap: 0.5em;
+}
+.payment p{
+    padding-left: 0.5em;
+}
+.submit{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+.h2raffle{
+    font-size: 1em;
+}
+
+        /*Responsive para >319px*/
+
+@media (max-width:319px){
+    header{
+        min-height: 20vh;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    nav{
+        padding: 0;
+        flex-direction: column;
+    }
+    .logo{
+        align-self: center;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    nav a{
+        padding: 0 1em;
+        font-size: 0.5em;
+        border: 0.1em solid;
+    }
+    main{
+        gap: 0.2em;
+        padding-bottom: 0.5em;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 0.9em;
+    }
+    .banner{
+        width: 95%;
+        height: 5em;
+    }
+    .caja1{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5em;
+        padding-top: 1em;
+    }
+    .caja1 p{
+        font-size: 0.6em;
+        width: 100%;
+    }
+    .caja1 img{
+        width: 70%;
+    }
+    footer{
+        min-height: 5vh;
+        font-size: 0.5em;
+    }
+    .caja2{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.7em;
+    }
+    .Helado, .choco, .panqueque2{
+        padding: 0;
+    }
+    .caja2 p{
+        font-size: 0.6em;
+        padding-left: 1em;
+    }
+    .caja3 img{
+        width: 80%;
+    }
+    .caja3 p{
+        font-size: 0.6em;
+    }
+    .info{
+        flex-direction: column;
+        font-size: 0.6em;
+        padding-left: 2em;
+        width: 90%;
+    }
+    .info p{
+        width: 100%;
+    }
+    table, thead, tbody, th, tr, td{
+        width: 15em;
+        font-size: 0.9em;
+        padding: 1em 0.2em;
+    }
+    .caja4{
+        flex-direction: column;
+    }
+    .caja4 img{
+        width: 90%;
+    }
+    #CreamIce{
+        height: 10em;
+        object-fit: cover;
+    }
+    #CandyIcecream{
+        height: 15em;
+        object-fit: cover;
+    }
+    ol{
+        font-size: 0.5em;
+    }
+    #caja4{
+        padding-left: 0;
+        gap: 0;
+    }
+    .list2{
+        padding-left: 4em;
+    }
+    .h2raffle{
+        font-size: 0.5em;
+        width: 98%;
+    }
+    .cajamapform{
+        flex-direction: column-reverse;
+        height: 50%;
+        align-items: center;
+    }
+    .caja5{
+        width: 98%;
+        font-size: 0.8em;
+        padding-top: 0.5em;
+        height: 20%;
+    }
+    .caja6{
+        width: 60%;
+    }
+}
+
+        /*Responsive para 320px a 767px*/
+
+@media (min-width:320px) and (max-width:767px){
+    header{
+        min-height: 20vh;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    nav{
+        padding: 0;
+        flex-direction: column;
+    }
+    .logo{
+        align-self: center;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    nav a{
+        padding: 0 1em;
+        font-size: 0.5em;
+        border: 0.1em solid;
+    }
+    main{
+        gap: 0.2em;
+        padding-bottom: 0.5em;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 0.9em;
+    }
+    .banner{
+        width: 95%;
+        height: 5em;
+    }
+    .caja1{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5em;
+        padding-top: 1em;
+    }
+    .caja1 p{
+        font-size: 0.6em;
+        width: 100%;
+    }
+    .caja1 img{
+        width: 70%;
+    }
+    footer{
+        min-height: 5vh;
+        font-size: 0.5em;
+    }
+    .caja2{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.7em;
+    }
+    .Helado, .choco, .panqueque2{
+        padding: 0;
+    }
+    .caja2 p{
+        font-size: 0.6em;
+        padding-left: 1em;
+    }
+    .caja3 img{
+        width: 80%;
+    }
+    .caja3 p{
+        font-size: 0.6em;
+    }
+    .info{
+        flex-direction: column;
+        font-size: 0.6em;
+        padding-left: 2em;
+        width: 90%;
+    }
+    .info p{
+        width: 100%;
+    }
+    table, thead, tbody, th, tr, td{
+        width: 50%;
+        font-size: 0.9em;
+        padding: 1em 0.2em;
+    }
+    .caja4{
+        flex-direction: column;
+    }
+    .caja4 img{
+        width: 90%;
+    }
+    #CreamIce{
+        height: 10em;
+        object-fit: cover;
+    }
+    #CandyIcecream{
+        height: 15em;
+        object-fit: cover;
+    }
+    ol{
+        font-size: 0.5em;
+    }
+    #caja4{
+        padding-left: 0;
+        gap: 0;
+    }
+    #caja4 img{
+        width: 90%;
+    }
+    .list2{
+        padding-left: 4em;
+    }
+    .h2raffle{
+        font-size: 0.5em;
+        width: 98%;
+    }
+    .cajamapform{
+        flex-direction: column-reverse;
+        height: 50%;
+        align-items: center;
+    }
+    .caja5{
+        width: 98%;
+        font-size: 0.8em;
+        padding-top: 0.5em;
+        height: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .caja5 iframe{
+        width: 50%;
+    }
+    .caja6{
+        width: 60%;
+    }
+}
+
+        /*Responsive para 768px a 1023px*/
+
+@media (min-width:768px) and (max-width:1023px){
+    header{
+        min-height: 20vh;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    nav{
+        padding: 0;
+        flex-direction: column;
+    }
+    .logo{
+        align-self: center;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    nav a{
+        padding: 0 1em;
+        font-size: 0.8em;
+        border: 0.1em solid;
+    }
+    main{
+        gap: 0.2em;
+        padding-bottom: 0.5em;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .banner{
+        width: 95%;
+        height: 5em;
+    }
+    .caja1{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5em;
+        padding: 1em 0em;    
+    }
+    .caja1 p{
+        font-size: 1em;
+        width: 100%;
+    }
+    .caja1 img{
+        width: 70%;
+    }
+    footer{
+        min-height: 5vh;
+        font-size: 0.5em;
+    }
+    .caja2{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.7em;
+    }
+    .Helado, .choco, .panqueque2{
+        padding: 0;
+    }
+    .caja2 p{
+        font-size: 1em;
+        padding-left: 1em;
+    }
+    .caja3 img{
+        width: 80%;
+    }
+    .caja3 p{
+        font-size: 1em;
+    }
+    .info{
+        flex-direction: column;
+        font-size: 1em;
+        padding-left: 2em;
+        width: 90%;
+    }
+    .info p{
+        width: 100%;
+    }
+    table, thead, tbody, th, tr, td{
+        width: 50%;
+        font-size: 1.1em;
+        padding: 0.5em 0.2em;
+    }
+    .caja4{
+        flex-direction: column;
+    }
+    .caja4 img{
+        width: 50%;
+    }
+    #CreamIce{
+        height: 10em;
+        object-fit: cover;
+    }
+    #CandyIcecream{
+        height: 15em;
+        object-fit: cover;
+    }
+    ol{
+        font-size: 1em;
+    }
+    #caja4{
+        padding-left: 0;
+        width: 80%;
+        gap: 0;
+    }
+    .list2{
+        padding-left: 4em;
+    }
+    .h2raffle{
+        font-size: 1em;
+        width: 98%;
+    }
+    .cajamapform{
+        flex-direction: column-reverse;
+        height: 50%;
+        align-items: center;
+    }
+    .caja5{
+        width: 98%;
+        font-size: 0.8em;
+        padding-top: 0.5em;
+        height: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .caja5 iframe{
+        width: 50%;
+    }
+    .caja6{
+        width: 60%;
+    }
+}
+
+        /*Responsive para 1024px a 1439px*/
+
+@media (min-width:1024px) and (max-width:1439px){
+    nav{
+        gap: 1em;
+        width: 50%;
+    }
+    .caja1{
+        gap: 1em;
+    }
+    .caja2{
+        gap: 1em;
+    }
+    .caja4{
+        gap: 1em;
+    }
+    #caja4{
+        padding-left: 0;
+        gap: 1em;
+    }
+    #CreamIce{
+        height: 20em;
+        object-fit: contain;
+    }
+    #CandyIcecream{
+        height: 30em;
+        object-fit: cover;
+    }
+}
